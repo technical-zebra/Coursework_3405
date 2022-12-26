@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block reference %}<link rel="stylesheet" type="text/css" href="../static/css/login&register.css">{% endblock %}
+
+{% block title %}Join Quiz{% endblock %}
+
+{% block body %}
+     <div class="d-flex flex-column mb-3 justify-content-center">
+        <div class="p-2 d-flex justify-content-center logo"><img src="../static/img/logo.png" alt=""></div>
+        <div class="p-2 d-flex justify-content-center">
+            <h1>Join a Current Quiz</h1>
+        </div>
+        <div class="p-2 d-flex justify-content-center">
+            <div class="card">
+
+                <div class="card-body">
+
+                    <form method="POST">
+
+
+                        <div class="form-group">
+                            <label for="session_id">Session ID:</label>
+                            <input type="session_id" class="form-control" id="session_id" name="session_id"
+                                   placeholder="Enter Session ID">
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="nickname">Nickname:</label>
+                            <input type="nickname" class="form-control" id="nickname" name="nickname"
+                                   placeholder="Enter Your Nickname">
+                        </div>
+
+
+                        <button type="submit" class="btn btn-dark">Submit
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

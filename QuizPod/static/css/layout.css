@@ -1,0 +1,24 @@
+body {
+    background-color: #0d1117;
+    color: white;
+}
+
+.narbar-content {
+    background-color: #15181c;
+    color: white;
+    border-color: #15181c;
+
+}
+
+.row {
+    width: 100%;
+}
+
+.container {
+    max-width: 100%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}

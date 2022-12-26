@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+
+{% block title %}Create Quiz{% endblock %}
+
+{% block reference %}
+    <script src="../static/js/createQuiz.js"></script>
+{% endblock %}
+
+{% block body %}
+    <div class="container text-center">
+        <div class="row justify-content-md-center">
+            <div class="col col-lg-6">
+                <form method="POST">
+                    <div class="mb-3">
+                        <label for="inputQuestion" class="form-label">Your Question</label>
+                        <input type="question" class="form-control" id="question" name="question">
+                        <div id="questionHelp" class="form-text">Please enter your question here.</div>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input class="form-check-input" type="radio" name="QuizMode" id="RadioTrueOrFalse"
+                               value="TrueOrFalse" onclick="SelectRadioValue()">
+                        <label class="form-check-label" for="RadioTrueOrFalse">
+                            True or False mode
+                        </label>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input class="form-check-input" type="radio" name="QuizMode" id="RadioMutiChoices"
+                               value="MutiChoices" onclick="SelectRadioValue()"
+                               checked>
+                        <label class="form-check-label" for="RadioMutiChoices">
+                            4 multiple choice mode
+                        </label>
+                    </div>
+                    <div class="mb-3" id="choice1Block">
+                        <label for="inputChoice1" class="form-label">Choice 1</label>
+                        <input type="choice1" class="form-control" id="choice1" name="choice1">
+                        <div id="choiceHelp" class="form-text">Please enter your choice 1 content here.</div>
+                    </div>
+                    <div class="mb-3" id="choice2Block">
+                        <label for="inputChoice2" class="form-label">Choice 2</label>
+                        <input type="choice2" class="form-control" id="choice2" name="choice2">
+                        <div id="choiceHelp" class="form-text">Please enter your choice 2 content here.</div>
+                    </div>
+                    <div class="mb-3" id="choice3Block">
+                        <label for="inputChoice3" class="form-label">Choice 3</label>
+                        <input type="choice3" class="form-control" id="choice3" name="choice3">
+                        <div id="choiceHelp" class="form-text">Please enter your choice 3 content here.</div>
+                    </div>
+                    <div class="mb-3" id="choice4Block">
+                        <label for="inputChoice4" class="form-label">Choice 4</label>
+                        <input type="choice4" class="form-control" id="choice4" name="choice4">
+                        <div id="choiceHelp" class="form-text">Please enter your choice 4 content here.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="answer" class="form-label">Answer</label>
+                        <input type="answer" class="form-control" id="answer" name="answer">
+                        <div id="answerHelp" class="form-text">Please enter your answer here, must be one of "1" or "2"
+                            or "3" or "4".
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

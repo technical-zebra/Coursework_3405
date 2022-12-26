@@ -1,0 +1,21 @@
+.main_structure{
+    padding-top: 20px;
+}
+
+.session_id{
+    text-align: left;
+}
+
+.identity{
+    text-align: left;
+    color: #0d1117;
+}
+
+.nickname{
+    text-align: left;
+    color: #0d1117;
+}
+.m_row{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}

@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block reference %}
+    <link rel="stylesheet" href="../static/css/waiting_hall.css">
+    <script src="../static/js/waiting_hall.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.4/socket.io.js" integrity="sha512-aMGMvNYu8Ue4G+fHa359jcPb1u+ytAF+P2SCb+PxrjCdO3n3ZTxJ30zuH39rimUggmTwmh2u7wvQsDTHESnmfQ==" crossorigin="anonymous"></script>
+
+{% endblock %}
+
+{% block title %}Waiting Hall{% endblock %}
+
+{% block body %}
+    <div class="container text-center main_structure">
+        <div class="row m_row">
+            <div class="col-4">Current Session ID:</div>
+            <div class="col-8 session_id">{{ session_id }}</div>
+        </div>
+        <div class="row m_row">
+            <div class="col-4">Current Students:</div>
+            <div class="col-8">
+                <div class="container text-center">
+                    <div class="row row-cols-5" id="log">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row m_row teacher_view" id="TeacherBlock">
+            <div class="col-12">
+                <button type="button" class="btn btn-success" onClick="startQuiz()"> Start the Quiz
+                </button>
+            </div>
+        </div>
+        <div class="row m_row">
+            <div class=" identity" id="identity">{{ user.type }}</div>
+            <div class=" nickname" id="nickname">{{ user.email.split("@")[0] }}</div>
+        </div>
+    </div>
+
+{% endblock %}

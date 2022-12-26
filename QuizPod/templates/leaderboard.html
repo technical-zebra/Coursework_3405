@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+
+{% block title %}Display LeaderBoard{% endblock %}
+
+{% block reference %}
+{% endblock %}
+
+{% block body %}
+    <div class="container text-center">
+
+        <div class="row">
+            <div class="col"><h2>Winner:</h2></div>
+        </div>
+
+
+
+
+        {% for nickname,score in current_students.items() %}
+            <div class="row">
+            <div class="col-3">
+            </div>
+            <div class="col-3">
+            {{ nickname }}:
+            </div>
+            <div class="col-3">
+            {{ score }}
+            </div>
+            <div class="col-3">
+            </div>
+            </div>
+        {% endfor %}
+
+
+    </div>
+
+{% endblock %}

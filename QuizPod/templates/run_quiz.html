@@ -1,0 +1,89 @@
+{% extends "layout.html" %}
+
+{% block title %}Run Quiz{% endblock %}
+
+{% block reference %}
+    <link rel="stylesheet" type="text/css" href="../static/css/run_quiz.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <script src="../static/js/runQuiz.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+{% endblock %}
+
+{% block body %}
+    <p></p>
+    <form method="POST">
+        <div class="container text-center">
+            <p></p>
+            <div class="row row-cols-4">
+                <div class="col timer d-lg-flex justify-content-center">
+                    <div id="js_timer">
+                        00:15 s
+                    </div>
+                </div>
+
+                <div class="col question" id="qid"><img src="../static/img/question%20mark.png"
+                                                        onload="loadImage({{ quiz.id }}, {{ length }})" width="64"
+                                                        height="64">Question {{ quiz.id }}:
+                </div>
+                <div class="col question">{{ quiz.content }}</div>
+                <div class="col"></div>
+
+            </div>
+            <p></p>
+            <div class="row row-cols-3 waiting" id="waiting">
+                <div class="col">
+                </div>
+                <div class="col">
+                    <h2> Waiting for others...</h2>
+                </div>
+                <div class="col">
+                </div>
+            </div>
+            <div class="row row-cols-4" id="btnGroup1">
+                <div class="col">
+                </div>
+                <div class="col answer">
+                    <button type="button" class="button1" value="1" name="btn"
+                            onclick="SubmitAnswer({{ quiz.id }}, 1, {{ length }})">{{ quiz.choice_1_content }}</button>
+                </div>
+                <div class="col answer">
+                    <button type="button" class="button2" value="2" name="btn"
+                            onclick="SubmitAnswer({{ quiz.id }}, 2, {{ length }})">{{ quiz.choice_2_content }}</button>
+                </div>
+                <div class="col">
+                </div>
+            </div>
+            <p></p>
+            <div class="row row-cols-4" id="btnGroup2">
+                <div class="col">
+                </div>
+                <div class="col answer">
+                    <button type="button" class="button3" value="3" name="btn"
+                            onclick="SubmitAnswer({{ quiz.id }}, 3, {{ length }})">{{ quiz.choice_3_content }}</button>
+                </div>
+                <div class="col answer">
+                    <button type="button" class="button4" value="4" name="btn"
+                            onclick="SubmitAnswer({{ quiz.id }}, 4, {{ length }})">{{ quiz.choice_4_content }}</button>
+                </div>
+                <div class="col">
+                </div>
+            </div>
+
+        </div>
+    </form>
+    <div class="container text-center ">
+        <div class="row m_row teacher_view" id="TeacherBlock">
+            <div class="col-12">
+                <button type="button" class="btn btn-success" onClick="nextQuiz()"> Start the Next Quiz
+                </button>
+            </div>
+        </div>
+        <div class="row m_row">
+            <div class=" identity" id="identity">{{ user.type }}</div>
+            <div class=" nickname" id="nickname">{{ user.email.split("@")[0] }}</div>
+        </div>
+    </div>
+
+
+{% endblock %}
+
