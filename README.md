@@ -2,7 +2,7 @@
 This project is to build a kahoot-like web application, and the contributors are JCU Singpore Design Thinking 3 SP52 2022 Group 5 Students. Since original repository is private, I have reupload a public version.
 
 ## Screenshots
-![Login Page]([/relative/path/to/img.jpg?raw=true](https://github.com/technical-zebra/Coursework_3405/blob/main/Screenshots/Picture1.png) "Login Page")
+![Login Page](https://github.com/technical-zebra/Coursework_3405/blob/main/Screenshots/Picture1.png "Login Page")
 
 
 
