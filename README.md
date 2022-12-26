@@ -2,21 +2,44 @@
 This project is to build a kahoot-like web application, and the contributors are JCU Singpore Design Thinking 3 SP52 2022 Group 5 Students. Since original repository is private, I have reupload a public version.
 
 ## Screenshots
-![Login Page](https://github.com/technical-zebra/Coursework_3405/blob/main/Screenshots/Picture1.png "Login Page")
 ### Login Page
+![Login Page](https://github.com/technical-zebra/Coursework_3405/blob/main/Screenshots/Picture1.png "Login Page")
 
 
-![Sign up Page](https://github.com/technical-zebra/Coursework_3405/blob/main/Screenshots/Picture2.png "Sign up Page")
 ### Sign up Page
+![Sign up Page](https://github.com/technical-zebra/Coursework_3405/blob/main/Screenshots/Picture2.png "Sign up Page")
 
 
-![Login Page](https://github.com/technical-zebra/Coursework_3405/blob/main/Screenshots/Picture1.png "Login Page")
-### Login Page
+### Create quiz Page (multi-choices)
+![Create quiz Page (multi-choices)](https://github.com/technical-zebra/Coursework_3405/blob/main/Screenshots/Picture3.png "Create quiz Page (multi-choices)")
 
 
-![Login Page](https://github.com/technical-zebra/Coursework_3405/blob/main/Screenshots/Picture1.png "Login Page")
-### Login Page
+### Display quiz Page
+![Display quiz Page](https://github.com/technical-zebra/Coursework_3405/blob/main/Screenshots/Picture4.png "Display quiz Page")
 
+
+### Waiting hall (Teacher)
+![Create quiz Page (true or false)](https://github.com/technical-zebra/Coursework_3405/blob/main/Screenshots/Picture5.png "Create quiz Page (true or false)")
+
+
+### Waiting hall (Student)
+![Waiting hall (Student)](https://github.com/technical-zebra/Coursework_3405/blob/main/Screenshots/Picture6.png "Waiting hall (Student)")
+
+
+### Join quiz Page (Student)
+![Join quiz Page (Student)](https://github.com/technical-zebra/Coursework_3405/blob/main/Screenshots/Picture7.png "Join quiz Page (Student)")
+
+
+### Run Quiz(Student)
+![Run Quiz(Student)](https://github.com/technical-zebra/Coursework_3405/blob/main/Screenshots/Picture8.png "Run Quiz(Student)")
+
+
+### Run Quiz(Teacher)
+![Run Quiz(Teacher)](https://github.com/technical-zebra/Coursework_3405/blob/main/Screenshots/Picture9.png "Run Quiz(Teacher)")
+
+
+### Winner Page
+![Winner Page](https://github.com/technical-zebra/Coursework_3405/blob/main/Screenshots/Picture10.png "Winner Page")
 
 
 ## Project Report
