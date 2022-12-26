@@ -3,6 +3,19 @@ This project is to build a kahoot-like web application, and the contributors are
 
 ## Screenshots
 ![Login Page](https://github.com/technical-zebra/Coursework_3405/blob/main/Screenshots/Picture1.png "Login Page")
+### Login Page
+
+
+![Sign up Page](https://github.com/technical-zebra/Coursework_3405/blob/main/Screenshots/Picture2.png "Sign up Page")
+### Sign up Page
+
+
+![Login Page](https://github.com/technical-zebra/Coursework_3405/blob/main/Screenshots/Picture1.png "Login Page")
+### Login Page
+
+
+![Login Page](https://github.com/technical-zebra/Coursework_3405/blob/main/Screenshots/Picture1.png "Login Page")
+### Login Page
 
 
 
