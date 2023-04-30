@@ -24,16 +24,19 @@ function setTimerText() {
     sec = sec - 1;
     if (sec <= 0) {
 
-        // qid = document.getElementById('qid').textContent;
-        // qid = qid.replace("Question ", "").replace(":", "");
-
         if (identity == "student") {
-
-            fetch("/send-answer", {
-                method: "POST",
-                body: JSON.stringify({ans: answer, quizId: qid, nickname: nickname}),
-            }).then((_res) => {
-            });
+          $.ajax({
+            url: "/send-answer",
+            method: "POST",
+            data: JSON.stringify({ ans: answer, quizId: qid, nickname: nickname }),
+            contentType: "application/json",
+            success: function(_res) {
+              console.log("Answer successfully sent!");
+            },
+            error: function(xhr, status, error) {
+              console.error("Error sending answer:", error);
+            }
+          });
         }
     }
 }
