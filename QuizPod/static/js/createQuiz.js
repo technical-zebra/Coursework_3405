@@ -1,3 +1,7 @@
+/**
+ * The function selects radio button values and displays/hides certain blocks of HTML code based on the
+ * selected value.
+ */
 function SelectRadioValue() {
     
     var radios = document.getElementsByName('QuizMode');
